@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85300f56-9a3e-472c-b544-c077d0cd01bd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/proxy/dynamic/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/dynamic/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/dynamic/ViewInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/dynamic/Widget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/dynamic/ViewProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proxy/dynamic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proxy/dynamic/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,14 +16,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="480">
-                <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="ViewInvocationHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/proxy/dynamic/ViewInvocationHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,8 +33,17 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/proxy/dynamic/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="165">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/proxy/dynamic/ViewProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -63,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/adapter/OldDevice.java" />
         <option value="$PROJECT_DIR$/src/adapter/NewDevice.java" />
         <option value="$PROJECT_DIR$/src/adapter/OldDeviceInterface.java" />
         <option value="$PROJECT_DIR$/src/adapter/NewDeviceInterface.java" />
@@ -112,8 +119,9 @@
         <option value="$PROJECT_DIR$/src/proxy/dynamic/View.java" />
         <option value="$PROJECT_DIR$/src/proxy/dynamic/Widget.java" />
         <option value="$PROJECT_DIR$/src/proxy/dynamic/DynamicProxy.java" />
-        <option value="$PROJECT_DIR$/src/proxy/dynamic/Main.java" />
         <option value="$PROJECT_DIR$/src/proxy/dynamic/ViewInvocationHandler.java" />
+        <option value="$PROJECT_DIR$/src/proxy/dynamic/ViewProxy.java" />
+        <option value="$PROJECT_DIR$/src/proxy/dynamic/Main.java" />
       </list>
     </option>
   </component>
@@ -323,7 +331,7 @@
       <workItem from="1541463863096" duration="5331000" />
       <workItem from="1541498351424" duration="8087000" />
       <workItem from="1541658833970" duration="5895000" />
-      <workItem from="1542008804676" duration="7553000" />
+      <workItem from="1542008804676" duration="8723000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1540799026245</created>
@@ -360,11 +368,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542017610143</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="dynamic proxy">
+      <created>1542069991110</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1542069991110</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49843000" />
+    <option name="totallyTimeSpent" value="51013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1625" height="1027" extended-state="0" />
@@ -412,7 +427,8 @@
     <MESSAGE value="command" />
     <MESSAGE value="composition" />
     <MESSAGE value="static proxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="static proxy" />
+    <MESSAGE value="dynamic proxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamic proxy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -420,13 +436,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/facade/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/template/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -753,18 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/proxy/dynamic/ViewInvocationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/proxy/dynamic/Widget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -804,10 +801,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/proxy/dynamic/ViewInvocationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proxy/dynamic/ViewProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/proxy/dynamic/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
