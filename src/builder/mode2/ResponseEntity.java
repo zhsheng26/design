@@ -26,7 +26,7 @@ public class ResponseEntity<T> {
         }
 
         public ResponseBuilder putHeader(String key, String value) {
-            headers.put(key, value);
+            this.headers.put(key, value);
             return this;
         }
 
